@@ -12,20 +12,19 @@
 
 .hour-scale-title {
   position: absolute;
-  top: -30px;
+  top: -1.5rem;
   transform: translateX(-50%);
-
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .hour-scale:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 0.25rem;
 }
 
 .minute-scall {
   height: 5px;
   border-right: 1px solid #ececec;
-  margin-right: 5px;
+  margin-right: 0.25rem;
 }
 
 .minute-scall-half {
