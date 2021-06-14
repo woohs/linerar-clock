@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/linerar-clock/static/css/main.681a5af6.chunk.css",
+    "main.js": "/linerar-clock/static/js/main.5e202f8e.chunk.js",
+    "main.js.map": "/linerar-clock/static/js/main.5e202f8e.chunk.js.map",
+    "runtime-main.js": "/linerar-clock/static/js/runtime-main.8e520912.js",
+    "runtime-main.js.map": "/linerar-clock/static/js/runtime-main.8e520912.js.map",
+    "static/js/2.78229f36.chunk.js": "/linerar-clock/static/js/2.78229f36.chunk.js",
+    "static/js/2.78229f36.chunk.js.map": "/linerar-clock/static/js/2.78229f36.chunk.js.map",
+    "index.html": "/linerar-clock/index.html",
+    "static/css/main.681a5af6.chunk.css.map": "/linerar-clock/static/css/main.681a5af6.chunk.css.map",
+    "static/js/2.78229f36.chunk.js.LICENSE.txt": "/linerar-clock/static/js/2.78229f36.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/linerar-clock/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e520912.js",
+    "static/js/2.78229f36.chunk.js",
+    "static/css/main.681a5af6.chunk.css",
+    "static/js/main.5e202f8e.chunk.js"
+  ]
+}
