@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import logo from "./assets/logo.svg";
+import "./App.css";
+import ScaleBox from "./components/ScaleBox";
+import Progress from "./components/Progress";
+
+const getCurrentTime = () => new Date().getTime() / 1000;
 
 function App() {
+  const [currentTime, setCurrentTime] = useState<number>(getCurrentTime());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const getTime = getCurrentTime();
+      setCurrentTime(getTime);
+    }, 1000);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <img src={logo} className='App-logo' alt='logo' />
       </header>
+
+      <main>
+        <ScaleBox />
+        <Progress currentTime={currentTime} />
+      </main>
+
+      <footer>白驹过隙，时光荏苒</footer>
     </div>
   );
 }
